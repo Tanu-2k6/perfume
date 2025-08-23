@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 style="color:#152542;">🍎 Fresh Fruit Shop</h1>
+  </header>
+
+  <section class="shop">
+    <div class="fruit-card">
+      <h2>Mandarin</h2>
+      <img src="Mandarin.jpg" alt="Mandarin" width="250" height="120">
+      <p>Price: ₹300 / kg</p>
+      <input type="number" id="appleQty" placeholder="Quantity (kg)" min="1">
+       
+      <button onclick="buyFruit('Mandarin', 100, 'appleQty')">Buy</button>
+    </div>
+
+    <div class="fruit-card">
+      <h2>Peaches</h2>
+      <img src="Peach.jpg" alt="Peaches" width="150" height="120">
+      <p>Price: ₹350 / kg</p>
+      <input type="number" id="bananaQty" placeholder="Quantity (kg)" min="1">
+       
+    <button onclick="buyFruit('Peaches', 40, 'bananaQty')">Buy</button>
+    </div>
+
+    <div class="fruit-card">
+      <h2>Avacado</h2>
+      <img src="avacado.jpg" alt="Avacado" width="150" height="120">
+      <p>Price: ₹550 / kg</p>
+      <input type="number" id="grapeQty" placeholder="Quantity (kg)" min="1">
+
+      <button onclick="buyFruit('Avacado', 60, 'grapeQty')">Buy</button>
+    </div>
+
+     <div class="fruit-card">
+      <h2>Mangosteen</h2>
+      <img src="Mangosteen.jpg" alt="Mangosteen" width="150" height="120">
+      <p>Price: ₹500 / kg</p>
+      <input type="number" id="grapeQty" placeholder="Quantity (kg)" min="1">
+
+      <button onclick="buyFruit('Mangosteen', 60, 'grapeQty')">Buy</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>🛒 Shopping Cart</h2>
+    <ul id="cartList"></ul>
+  <a href="index.html"><button class="Back-btn">Back</button></a>
+</section>
+  <footer>
+    <p>© 2025 Fresh Fruit Shop | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
